@@ -1,62 +1,53 @@
 // @ts-nocheck
 
-var i = 0;
+function fillTheBar(finalPxValue, htmlElementId, incrementStep,progressDelay) {
 
+  const progressBar = document.getElementById(htmlElementId);
 
-function htmlMove() {
-  if (i == 0) {
-    i = 1;
-    var elemHtml = document.getElementById("htmlBar");
-    var elemCss = document.getElementById("cssBar");
-    
-    var width = 0;
-    var id = setInterval(frame, 10);
-    function frame() {
-      if (width >= 80) {
-        clearInterval(id);
-        i = 0;
+  let currentWidth = 0;
+
+  const fillTimer = setInterval(() => {
+
+      if (currentWidth < finalPxValue) {
+          currentWidth += incrementStep;
+          progressBar.style.width = currentWidth + "%";
+          
       } else {
-        width++;
-        elemHtml.style.width = width + "%";
-        elemHtml.innerHTML = "HTML " + width  + "%";
-
-        elemCss.style.width = width + "%";
-        elemCss.innerHTML = "CSS " + width  + "%";
+          clearInterval(fillTimer);
       }
-    }
-  }
+
+  }, progressDelay)
+
 }
 
-function cssMove() {
+function main() {
 
-    if (i == 0) {
-      i = 1;
-      var elemCss = document.getElementById("cssBar");
-        console.log(elemCss)
-      var width = 0;
-      var id = setInterval(frame, 10);
-      function frame() {
-        if (width >= 80) {
-          clearInterval(id);
-          i = 0;
-        } else {
-          width++;
-          elemCss.style.width = width + "%";
-          elemCss.innerHTML = "Css " + width  + "%";
-        }
-      }
-    }
-  }
+  fillTheBar(80, "htmlBar", 1 , 15) //animation de la progress-bar html
+
+  fillTheBar(80, "cssBar", 1, 15) //animation de la progress-bar css
+
+  fillTheBar(45, "javascriptBar", 1 , 15) //animation de la progress-bar javascript
+
+  fillTheBar(60, "jqueryBar", 1, 15) //animation de la progress-bar jquery
+
+  fillTheBar(80, "bootstrapBar", 1, 15) //animation de la progress-bar bootstrap
+
+  fillTheBar(40, "phpBar", 1 , 15) //animation de la progress-bar php
+}
 
 $(function(){
     $(".navbar a, footer a").on("click", function(event){
         event.preventDefault();
         var hash = this.hash;
-        $('body,html').animate({scrollTop: $(hash).offset().top}, 900, function(){window.location.hash = hash;})
+        
+        $('body,html').animate(
+          {scrollTop: $(hash).offset().top}, 
+          900, 
+          function(){
+            window.location.hash = hash;
+          })
     });
 
-    htmlMove();
-    cssMove();
-    
+    main()
 
 })
