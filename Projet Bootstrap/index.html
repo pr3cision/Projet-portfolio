@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="JavaScript/JavaScript.js"></script>
+    <script type="text/javascript" src="JavaScript/JavaScript.js"></script>
     <title>Cv Benjamin</title>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -20,7 +20,7 @@
     <!--Navbar-->
     <nav class="navbar navbar-expand-sm fixed-top">
       <div class="container">
-        <div class="navbar-header">
+        <div class="navbar-header"> 
           <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
             <span class="navbar-toggler-icon fas fa-bars"></span>
           </button>
@@ -33,9 +33,11 @@
             <li class="nav-item">
               <a class="nav-link" href="#skills">Competences</a>
             </li>
+            <!-- 
             <li class="nav-item">
               <a class="nav-link" href="#experience">Experience</a>
             </li>
+            -->
             <li class="nav-item">
               <a class="nav-link" href="#education">education</a>
             </li>
@@ -69,42 +71,43 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="progress">
-              <div class="progress-bar" style="width: 85%;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                <h5>HTML 85%</h5>
+            <div class="progress" role="progressbar">
+              <div id="htmlBar" class="progress-bar"  role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                <h5>HTML 80%</h5>
               </div>
             </div>
-            <div class="progress">
-              <div class="progress-bar" style="width: 85%;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                <h5>CSS 85%</h5>
+            <div class="progress" role="progressbar">
+              <div id="cssBar" class="progress-bar"  role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                <h5>CSS 80%</h5>
               </div>
             </div>
-            <div class="progress">
-              <div class="progress-bar" style="width: 90%;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                <h5>JAVASCRIPT 90%</h5>
+            <div class="progress" role="progressbar">
+              <div class="progress-bar" style="width: 45%;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                <h5>JAVASCRIPT 45%</h5>
               </div>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="progress">
-              <div class="progress-bar" style="width: 85%;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                <h5>JQUERY 85%</h5>
+            <div class="progress" role="progressbar">
+              <div class="progress-bar" style="width: 60%;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                <h5>JQUERY 60%</h5>
               </div>
             </div>
-            <div class="progress">
+            <div class="progress" role="progressbar">
               <div class="progress-bar" style="width: 80%;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                 <h5>BOOTSTRAP 80%</h5>
               </div>
             </div>
-            <div class="progress">
-              <div class="progress-bar" style="width: 75%;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                <h5>ANGULAR 75%</h5>
+            <div class="progress" role="progressbar">
+              <div class="progress-bar" style="width: 40%;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                <h5>PHP 40%</h5>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!--
     <section id="experience">
       <div class="container">
         <div class="white-divider"></div>
@@ -170,6 +173,7 @@
         </ul>
       </div>
     </section>
+    -->
     <section id="education">
       <div class="container">
         <div class="red-divider"></div>
@@ -179,20 +183,20 @@
         <div class="row">
           <div class="col-sm-6">
             <div class="education-block">
-              <h5>2002-2006</h5>
+              <h5>2020-2020</h5>
               <span class="fas fa-graduation-cap"></span>
-              <h3>École Polytechnique Paris</h3>
-              <h4>Diplôme d'ingénieur informatique</h4>
+              <h3>Cegep Saint-Jean-sur-Richelieu</h3>
+              <h4>Certificat Collégial  Développement orienté Web</h4>
               <div class="red-divider"></div>
-              <p>Intelligence Artificielle</p>
-              <p>Système d'informations</p>
+              <p>HTML - CSS - WORDPRESS - JAVASCRIPT </p>
+              <p>Analyste Web</p>
             </div>
           </div>
           <div class="col-sm-6">
             <div class="education-block">
-              <h5>2007</h5>
+              <h5>2019</h5>
               <span class="fas fa-graduation-cap"></span>
-              <h3>Apprendre-a-coder.com</h3>
+              <h3>Udemy</h3>
               <h4>Formation online "Développeur Web" </h4>
               <div class="red-divider"></div>
               <p>HTML/CSS, Javascript, JQuery</p>
@@ -210,35 +214,35 @@
           </div>
           <div class="row">
             <div class="col-sm-4">
-              <a href="https://fr-ca.facebook.com/" target="_blank">
-                <img src="Images/facebook-share.png" alt="Lien vers facebook share" class="img-thumbnail">
+              <a href="https://github.com/pr3cision/formulaire-contact" target="_blank" >
+                <img src="Images/contact-form.PNG" alt="Lien vers Contact form Github" class="img-thumbnail">
               </a>
             </div>
             <div class="col-sm-4">
-              <a href="https://www.google.com/" target="_blank">
-                <img src="Images/google-translate.png" alt="Lien vers google-translate" class="img-thumbnail">
+              <a href="https://github.com/pr3cision/wordpress-restaurant-sushi" target="_blank">
+                <img src="Images/sushi.PNG" alt="Lien vers Wordpress sushi" class="img-thumbnail">
               </a>
             </div>
             <div class="col-sm-4">
-              <a href="https://twitter.com/login?lang=fr" target="_blank">
-                <img src="Images/twitter-video.png" alt="Lien vers Twitter" class="img-thumbnail">
+              <a href="https://github.com/pr3cision/wordpress-todo" target="_blank">
+                <img src="Images/todo.PNG" alt="Lien vers apps todo github" class="img-thumbnail">
               </a>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-4">
-              <a href="https://www.youtube.com/" target="_blank">
-                <img src="Images/youtube.png" alt="youtube" class="img-thumbnail">
+              <a href="https://github.com/pr3cision/jeu-serpent" target="_blank">
+                <img src="Images/Serpent.PNG" alt="jeu serpent" class="img-thumbnail">
               </a>
             </div>
             <div class="col-sm-4">
-              <a href="https://twitter.com/login?lang=fr" target="_blank">
-                <img src="Images/twitter-retweet.png" alt="Lien vers twitter-retweet" class="img-thumbnail">
+              <a href="https://github.com/pr3cision/agence-voyage" target="_blank">
+                <img src="Images/voyage.PNG" alt="Lien vers agence voyage github" class="img-thumbnail">
               </a>
             </div>
             <div class="col-sm-4">
-              <a href="https://fr-ca.facebook.com/" target="_blank">
-                <img src="Images/facebook-video.png" alt="Lien vers facebook-video" class="img-thumbnail">
+              <a href="https://github.com/pr3cision/slideshow-actrice" target="_blank">
+                <img src="Images/Actrice.PNG" alt="Lien vers slide-show github" class="img-thumbnail">
               </a>
             </div>
           </div>
@@ -293,7 +297,7 @@
       <a href="#about">
         <span class="fas fa-chevron-up"></span>
       </a>
-      <h5>&copy; 2016 apprendre-a-coder.com</h5>
+      <h5>&copy; 2020 Benjamin Lemoine</h5>
     </footer>
   </body>
 </html>
