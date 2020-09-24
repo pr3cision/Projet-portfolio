@@ -21,7 +21,7 @@ function htmlMove() {
         elemHtml.innerHTML = "HTML " + width  + "%";
 
         elemCss.style.width = width + "%";
-        elemCss.innerHTML = "HTML " + width  + "%";
+        elemCss.innerHTML = "CSS " + width  + "%";
       }
     }
   }
