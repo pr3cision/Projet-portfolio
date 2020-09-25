@@ -47,6 +47,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#recommandation">Recommandation</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Me contacter</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -54,14 +57,34 @@
 
     <section id="about" class="container-fluid">
     <!--possiblement probleme grandeur a verifer-->
-      <div class="col-sm-8 col-md-4 profile-picture">
-        <img src="Images\Moi.jpg" alt="Ben" class="rounded-circle">
+    <div class="row">
+      <div class="col-6">
+
+        <div class="col-sm-8 col-md-4 profile-picture">
+          <img src="Images\Moi.jpg" alt="Ben" class="rounded-circle">
+        </div>
+        <div class="heading">
+          <h1>Hello, Moi c'est Benjamin</h1>
+          <h3>Developpeur Web</h3>
+          <a href="Docs\CVBen2019.pdf" class="button1">Telecharger Cv</a>
+        </div>
       </div>
-      <div class="heading">
-        <h1>Hello, Moi c'est Benjamin</h1>
-        <h3>Developpeur Web</h3>
-        <a href="Docs\CVBen2019.pdf" class="button1">Telecharger Cv</a>
+      <div class="col-sm-6">
+        <div class="col-sm-8 col-md-4 profile-picture">
+          <i class="fas fa-icons interest_icon"></i>
+        </div>
+        <div id="interest" class="heading">
+
+          <h1>Intérêt</h1>
+
+          <h3>Intérêt marqué pour le design web / coté client</h3>
+          <h3>Intérêt pour le design UI / UX</h3>
+          <h3>Autre que la programmation , j'ai aussi un intérêt pour le branding et stratégie marketing</h3>
+          
+        </div>
       </div>
+    </div>
+
     </section>
 
     <section id="skills" >
@@ -289,16 +312,16 @@
           <!-- The slideshow -->
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-              <h3>"John t'es le meilleur! Merci pour tout..."</h3>
-              <h4>Larry Page, Google Co-Founder</h4>
+              <h3>"Le meilleur élève de sa catégorie"</h3>
+              <h4>Prof 1</h4>
             </div>
             <div class="carousel-item">
-              <h3>"Merci John de m'avoir appris à coder... Tout ça c'est grâce à toi!"</h3>
-              <h4>Mark Zuckerberg, Facebook Founder and CEO</h4>
+              <h3>"Produit un travail impeccable"</h3>
+              <h4>Professeur 2</h4>
             </div>
             <div class="carousel-item">
-              <h3>"L'esprit le plus créatif que j'ai vu de toute ma vie..."</h3>
-              <h4>Jack Dorsey, Twitter Founder and CEO</h4>
+              <h3>"Très talentueux "</h3>
+              <h4>Professeur 3</h4>
             </div>
           </div>
           <!-- Left and right controls -->
@@ -311,10 +334,17 @@
         </div>
       </div>
     </section>
-    <footer class="text-center">
+    <footer class="text-center" id="contact">
       <a href="#about">
         <span class="fas fa-chevron-up"></span>
       </a>
+      <h1>Pour me contacter</h1>
+      <h5>
+        Téléphone : 450 - 635 - 3113 
+      </h5>
+      <h5>
+        Email : <a href="fivehundred93@hotmail.com"> fivehundred93@hotmail.com</a>
+      </h5>
       <h5>&copy; 2020 Benjamin Lemoine</h5>
     </footer>
   </body>

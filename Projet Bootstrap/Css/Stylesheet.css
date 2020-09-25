@@ -106,6 +106,19 @@ nav{
     color: #d82c2e;
     text-decoration: none;
 }
+
+.interest_icon{
+    font-size: 9em;
+    color: #fff;
+    margin-bottom: 0.35em;
+}
+#interest{
+    text-align: center;
+    padding: 30px;
+    background: #ddd;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
 /* Skills*/
 .progress{
     width: 100%;
@@ -324,6 +337,7 @@ nav{
     font-style: italic;
 }
 /*Footer*/
+
 footer{
     background: #333;
     padding: 20px 0 40px;
@@ -337,7 +351,7 @@ footer .fas{
 footer .fas:hover{
     font-size: 27px;
 }
-footer h5{
+footer h5 , h1{
     color: #fff;
     font-weight: normal;
 }
