@@ -110,15 +110,16 @@ nav{
 .interest_icon{
     font-size: 9em;
     color: #fff;
-    margin-bottom: 0.35em;
+    margin-bottom: 0.1em;
 }
-#interest{
-    text-align: center;
-    padding: 30px;
-    background: #ddd;
-    border-radius: 10px;
-    border: 2px solid #ccc;
+.interestPoint{
+    display: list-item;          /* This has to be "list-item"                                               */
+    list-style-type: circle;       /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+    list-style-position: inside;
+    text-align: start;
+    margin-bottom: 0.2em;
 }
+
 /* Skills*/
 .progress{
     width: 100%;
